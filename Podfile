@@ -6,8 +6,9 @@ target 'KnowYourLeague' do
   use_frameworks!
 
   # Pods for KnowYourLeague
-  pod 'Alamofire', '~> 4.7'
-  pod 'SwiftyJSON', '~> 4.0'
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'Charts'
 
   target 'KnowYourLeagueTests' do
     inherit! :search_paths

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MrB-s9-evE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="g1H-ro-zwC">
+            <objects>
+                <tabBarController id="MrB-s9-evE" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HjA-ou-mTj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fa2-3Z-EE2" kind="relationship" relationship="viewControllers" id="rLl-Zj-hga"/>
+                        <segue destination="Xp3-05-sNt" kind="relationship" relationship="viewControllers" id="xpj-AX-OIt"/>
+                        <segue destination="vO8-y2-OVw" kind="relationship" relationship="viewControllers" id="fyG-lB-PUd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pqa-Ua-UbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-610" y="-277"/>
+        </scene>
+        <!--champions-->
+        <scene sceneID="o1V-qS-2cR">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Champions" storyboardName="Champions" referencedIdentifier="champions" id="sif-iw-ahr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6EH-Mx-gU3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ni6-az-Te0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418" y="-660"/>
+        </scene>
+        <!--builds-->
+        <scene sceneID="F1C-sw-HgC">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Builds" storyboardName="Builds" referencedIdentifier="builds" id="Fqf-Mj-zNz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1s6-ug-GPX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UVr-QS-0aG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418" y="123"/>
+        </scene>
+        <!--summoners-->
+        <scene sceneID="L7c-cU-M5V">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Summoners" storyboardName="Summoners" referencedIdentifier="summoners" id="zw0-10-1KK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="czA-0u-wzD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2I-f9-mIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418" y="592"/>
+        </scene>
+        <!--Champions-->
+        <scene sceneID="FLG-Qp-pIO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fa2-3Z-EE2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Champions" id="0O4-4l-Jfp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LGA-Pf-nms">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sif-iw-ahr" kind="relationship" relationship="rootViewController" id="7Bd-UV-YXS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6nz-dm-pap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508" y="-659"/>
+        </scene>
+        <!--Builds-->
+        <scene sceneID="son-Zp-rHc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xp3-05-sNt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Builds" id="b9e-rd-miR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gey-at-V8B">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fqf-Mj-zNz" kind="relationship" relationship="rootViewController" id="CGN-wI-Q0R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nic-62-FXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508" y="124"/>
+        </scene>
+        <!--Summoners-->
+        <scene sceneID="0ac-p5-QO3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vO8-y2-OVw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Summoners" id="Jg0-vl-pW3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WPv-AI-oZq">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zw0-10-1KK" kind="relationship" relationship="rootViewController" id="YEh-WI-HsQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjU-r2-oGv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-610" y="593"/>
+        </scene>
+    </scenes>
+</document>
